@@ -3,392 +3,331 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E Portfolio</title>
+    <title>Jay Stewart</title>
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/96e503d42c.js"
       crossorigin="anonymous"
     ></script>
-  </head>
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "hnp2n1Q8doU5v-nbH",
+      });
+   })();
+</script>
+</head>
   <body>
-    <section id="about-me">
+    <section id="landing-page">
       <nav>
-        <div class="personal__logo">Jay Stewart</div>
+        <figure>
+          <img id="my-logo" src="./Assets/PersonalLogo.png" alt="Jay's Logo" />
+        </figure>
         <ul class="nav__link--list">
           <li class="nav__link">
             <a
               href="#"
-              class="nav__link--anchor link__hover-effect link__hover--effect--black"
-              >Languages</a
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
             >
           </li>
           <li class="nav__link">
             <a
               href="#"
-              class="nav__link--anchor link__hover-effect link__hover--effect--black"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Projects</a
             >
           </li>
           <li class="nav__link">
             <a
               href="#"
-              class="nav__link--anchor nav__hover-effect nav__link--anchor-primary"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Contact</a
             >
           </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+            >
+              <i class="fa-solid fa-circle-half-stroke"></i
+            ></a>
+          </li>
         </ul>
       </nav>
-      <div>
-        <div class="about-me__info row">
-          <div class="about-me__info--container">
-            <figure class="about-me__picture--mask">
-              <img
-                src="./Assets/Jay Stewart.jpg.jpg"
-                class="about-me__picture"
-                alt=""
-              />
-            </figure>
-            <h1 class="about-me__info--title">
-              Hey! I'm <span class="text--gray">Jay Stewart!</span>
-            </h1>
-            <p class="about-me__info--para">
-              A little about myself. I am a
-              <span class="text--gray">frontend software engineer</span> who
-              likes making great applications with slick designs and creating
-              enjoyable experiences.
+      <Header class="header">
+        <div class="header__content">
+            <h1 class="title">Hey</h1>
+            <h1 class="title Orange"> I'm Jay</h1>
+            <p class="header__para">
+                I'm a <b class="Orange">Frontend Engineer</b> with a strong passion for building
+                web applications with great user experiences. 
+                <br>
+                 Here's a bit more <b class="Orange">about me.</b>
+                 <div class="social__list">
+                    <a href="https://www.linkedin.com/in/jay-stewart-38420b261/" target="_blank" class="social__link click"> <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/creepybrow" class="social__link click"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" target="_blank" class="social__link click"> <i class="fa-solid fa-file-pdf"></i></a>
+                 </div>
             </p>
-            <div class="about-me__links">
-              <a href="" class="about-me__link">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-              <a href="" class="about-me__link">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-              <a href="" class="about-me__link">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="" class="about-me__link">
-                <i class="fa-solid fa-envelope"></i>
-              </a>
-              <a href="" class="about-me__link">
-                <i class="fa-solid fa-file"></i>
-              </a>
-            </div>
-            <figure class="about-me__img--container">
-              <img
-                src="./Assets/undraw_digital-artwork_xlmm.svg"
-                class="about-me__img"
-                alt=""
-              />
-            </figure>
-          </div>
         </div>
-      </div>
-    </section>
-    <section id="languages">
-      <div class="container">
-        <div class="row">
-          <h1 class="section__title">
-            This is my <span class="text--gray">technology stack</span>
-          </h1>
-          <div class="language__list">
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img src="./Assets/HTML.jpeg" alt="" class="language__img" />
-              </figure>
-              <span class="language__name">HTML</span>
+      </Header>
+      <button class="mail_btn click"><i class="fa-solid fa-envelope"></i></button>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div></a>
+        <div class="modal">
+            <div class="modal__half modal__about"><h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+            <h4 class="modal__sub--title modal__sub-title--about">Frontend Software Engineer.</h4>
+            <p class="modal__about--para">
+                I'm a 35 year old <b class="Orange">Software Engineer</b> from Frontend Simplified. I have learned to Make
+                websites that include great <b class="Orange">user experiences.</b>
+                <br>
+                I currently work on difficult engineering problems and working to make
+                the next <b class="Orange">seamless experience.</b>
+            </p>
+            <div class="modal__languages">
+                <figure class="modal__language">
+                    <img class="modal__language--img" src="./Assets/HTML.jpeg" alt="">
+                    <span class="language__name">HTML</span>
+                </figure>
+                <figure class="modal__language">
+                    <img class="modal__language--img" src="./Assets/Javascript.jpg" alt="">
+                    <span class="language__name">Javascript</span>
+                </figure>
+                <figure class="modal__language">
+                    <img class="modal__language--img" src="./Assets/React.jpg" alt="">
+                    <span class="language__name">React</span>
+                </figure>
+                <figure class="modal__language">
+                    <img class="modal__language--img" src="./Assets/TypeScript.jpg" alt="">
+                    <span class="language__name">TypeScript</span>
+                </figure>
             </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="./Assets/javascript-1-225993.webp"
-                  alt=""
-                  class="language__img"
-                />
-              </figure>
-              <span class="language__name">HTML</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img src="./Assets/mobx.webp" alt="" class="language__img" />
-              </figure>
-              <span class="language__name">HTML</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="./Assets/nuxt-dot-js-3628959-3030184.webp"
-                  alt=""
-                  class="language__img"
-                />
-              </figure>
-              <span class="language__name">HTML</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="./Assets/react-3-1175109.webp"
-                  alt=""
-                  class="language__img"
-                />
-              </figure>
-              <span class="language__name">HTML</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="./Assets/typescript-3521774-2945272.webp"
-                  alt=""
-                  class="language__img"
-                />
-              </figure>
-              <span class="language__name">HTML</span>
-            </div>
-          </div>
         </div>
-      </div>
+            <div class="modal__half modal__contact">
+                <div class="modal__title modal__title--contact">
+                    <h3 class="modal__title modal__title--contact">
+                        Let's Have a Chat!
+                    </h3>
+                    <p class="modal__sub-title modal__sub-title--contact">
+                        I'm currently open to new opportunities.
+                    </p>
+                    <form id="contact__form" onsubmit="contact(event)">
+                        <div class="form__item">
+                            <label class="form__item--label">Name</label>
+                            <input id="user_name" name="reply_to" type="text" for="user_name"></input>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__item--label">Email</label>
+                            <input class="input" name="user_email" type="email"></input>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__item--label">Message</label>
+                            <textarea class="input" name="message" type="text"></textarea>
+                        </div>
+                        <button id="contact__submit" class="form__submit">Send it my way</button>
+                        <div class="modal__overlay modal__overlay--loading">
+                            <i class="fas fa-spinner"></i>
+                        </div>
+                        <div class="modal__overlay modal__overlay--success">
+                            Thanks for the message! Looking forward to speaking to you soon.
+                        </div>
+                    </form>
+                </div>
+            <i class="fas fa-times modal__exit click"></i>
+        </div>
     </section>
     <section id="projects">
-      <div class="container">
-        <div class="row">
-          <div class="section__title">
-            Here are some of my <span class="text--gray">projects</span>
-            <ul class="project__list">
-              <li class="project">
-                <div class="project__wrapper">
-                  <img
-                    src="./Assets/DreamWorldHallway.jpg"
-                    class="project__img"
-                    alt="Looney Hallway"
-                  />
-                  <div class="project__description">
-                    <h3 class="project__description--title">
-                      <h4 class="project__description--sub-title">
-                        Game in development in Unreal engine, and Blueprints
-                      </h4>
-                      <p class="project__description--para">
-                        Just one of many entrances in my game I'm developing.
-                      </p>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-              <li class="project">
-                <div class="project__wrapper">
-                  <img
-                    src="./Assets/Fine tuning the world.jpg"
-                    class="project__img"
-                    alt="Looney Hallway"
-                  />
-                  <div class="project__description">
-                    <h3 class="project__description--title">
-                      <h4 class="project__description--sub-title">
-                        Game in development in Unreal engine, and Blueprints
-                      </h4>
-                      <p class="project__description--para">
-                        Just one of many entrances in my game I'm developing.
-                      </p>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-              <li class="project">
-                <div class="project__wrapper">
-                  <img
-                    src="./Assets/Game Start bubbles.jpg"
-                    class="project__img"
-                    alt="Looney Hallway"
-                  />
-                  <div class="project__description">
-                    <h3 class="project__description--title">
-                      <h4 class="project__description--sub-title">
-                        Game in development in Unreal engine, and Blueprints
-                      </h4>
-                      <p class="project__description--para">
-                        Just one of many entrances in my game I'm developing.
-                      </p>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-              <li class="project">
-                <div class="project__wrapper">
-                  <img
-                    src="./Assets/GameStartBubble2.jpg"
-                    class="project__img"
-                    alt="Looney Hallway"
-                  />
-                  <div class="project__description">
-                    <h3 class="project__description--title">
-                      <h4 class="project__description--sub-title">
-                        Game in development in Unreal engine, and Blueprints
-                      </h4>
-                      <p class="project__description--para">
-                        Just one of many entrances in my game I'm developing.
-                      </p>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-              <li class="project">
-                <div class="project__wrapper">
-                  <img
-                    src="./Assets/Opening Scene Take2.jpg"
-                    class="project__img"
-                    alt="Looney Hallway"
-                  />
-                  <div class="project__description">
-                    <h3 class="project__description--title">
-                      <h4 class="project__description--sub-title">
-                        Game in development in Unreal engine, and Blueprints
-                      </h4>
-                      <p class="project__description--para">
-                        Just one of many entrances in my game I'm developing.
-                      </p>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-              <li class="project">
-                <div class="project__wrapper">
-                  <img
-                    src="./Assets/Seahorse Room.jpg"
-                    class="project__img"
-                    alt="Looney Hallway"
-                  />
-                  <div class="project__description">
-                    <h3 class="project__description--title">
-                      <h4 class="project__description--sub-title">
-                        Game in development in Unreal engine, and Blueprints
-                      </h4>
-                      <p class="project__description--para">
-                        Just one of many entrances in my game I'm developing.
-                      </p>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-              <li class="project">
-                <div class="project__wrapper">
-                  <img
-                    src="./Assets/SplineRideForGlassCase.jpg"
-                    class="project__img"
-                    alt="Looney Hallway"
-                  />
-                  <div class="project__description">
-                    <h3 class="project__description--title">
-                      <h4 class="project__description--sub-title">
-                        Game in development in Unreal engine, and Blueprints
-                      </h4>
-                      <p class="project__description--para">
-                        Just one of many entrances in my game I'm developing.
-                      </p>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-              <li class="project">
-                <div class="project__wrapper">
-                  <img
-                    src="./Assets/Judge Room.jpg"
-                    class="project__img"
-                    alt="Looney Hallway"
-                  />
-                  <div class="project__description">
-                    <h3 class="project__description--title">
-                      <h4 class="project__description--sub-title">
-                        Game in development in Unreal engine, and Blueprints
-                      </h4>
-                      <p class="project__description--para">
-                        Just one of many entrances in my game I'm developing.
-                      </p>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-              <li class="project">
-                <div class="project__wrapper">
-                  <img
-                    src="./Assets/Masouleum.png"
-                    class="project__img"
-                    alt="Looney Hallway"
-                  />
-                  <div class="project__description">
-                    <h3 class="project__description--title">
-                      <h4 class="project__description--sub-title">
-                        Blender 4.5
-                      </h4>
-                      <p class="project__description--para">
-                        Mosoleum I made following along in Udemy
-                      </p>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-              <li class="project">
-                <div class="project__wrapper">
-                  <img
-                    src="./Assets/MonsterTracker.png"
-                    class="project__img"
-                    alt="Looney Hallway"
-                  />
-                  <div class="project__description">
-                    <h3 class="project__description--title">
-                      <h4 class="project__description--sub-title">
-                        Blender 4.5
-                      </h4>
-                      <p class="project__description--para">
-                        Udemy one hour challenge. Theme was Farm life.
-                      </p>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class="Orange">projects</span>
+                </h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img class="project__img" src="./Assets/Treact.jpg" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Treact Project
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, and CSS
+                                </h4>
+                                <p class="project__description--para">
+                                    This was the Week 2 project from Frontend Simplified.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="" class="project__description--link"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="" class="project__description--link"><i class="fa-brands fa-github"></i></a>
+                                    <a href="" class="project__description--link"><i class="fa-solid fa-file-pdf"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img class="project__img" src="./Assets/JavascriptFinal.jpg" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Treact Project
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, and CSS
+                                </h4>
+                                <p class="project__description--para">
+                                    This was the Week 2 project from Frontend Simplified.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="" class="project__description--link"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="" class="project__description--link"><i class="fa-brands fa-github"></i></a>
+                                    <a href="" class="project__description--link"><i class="fa-solid fa-file-pdf"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img class="project__img" src="./Assets/AppleWebsite.jpg" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Treact Project
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, and CSS
+                                </h4>
+                                <p class="project__description--para">
+                                    This was the Week 2 project from Frontend Simplified.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="" class="project__description--link"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="" class="project__description--link"><i class="fa-brands fa-github"></i></a>
+                                    <a href="" class="project__description--link"><i class="fa-solid fa-file-pdf"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img class="project__img" src="./Assets/BrainWave.jpg" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Treact Project
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, and CSS
+                                </h4>
+                                <p class="project__description--para">
+                                    This was the Week 2 project from Frontend Simplified.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="" class="project__description--link"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="" class="project__description--link"><i class="fa-brands fa-github"></i></a>
+                                    <a href="" class="project__description--link"><i class="fa-solid fa-file-pdf"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img class="project__img" src="./Assets/ReactMovieApp.jpg" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Treact Project
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, and CSS
+                                </h4>
+                                <p class="project__description--para">
+                                    This was the Week 2 project from Frontend Simplified.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="" class="project__description--link"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="" class="project__description--link"><i class="fa-brands fa-github"></i></a>
+                                    <a href="" class="project__description--link"><i class="fa-solid fa-file-pdf"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img class="project__img" src="./Assets/NFT Marketplace.jpg" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Treact Project
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, and CSS
+                                </h4>
+                                <p class="project__description--para">
+                                    This was the Week 2 project from Frontend Simplified.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="" class="project__description--link"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="" class="project__description--link"><i class="fa-brands fa-github"></i></a>
+                                    <a href="" class="project__description--link"><i class="fa-solid fa-file-pdf"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </section>
     <footer>
-      <div class="row footer__row">
-        <a href="#" class="footer__anchor">
-          <figure class="footer__logo">
-            <img src="./Assets/blueJ 600px.png" class="footer__logo--img" alt="personal logo" />
-          </figure>
-          <span class="footer__logo--popper">
-            Top
-            <i class="fas fa-arrow-up"></i>
-          </span>
-        </a>
-        <div class="footer__social--list">
-          <a href="" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white">GitHub</a>
-        </a>
-        <div class="footer__social--list">
-          <a href="" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white">LinkedIn</a>
-        <div class="footer__social--list">
-          <a href="" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white">Facebook</a>
-          <a href="mailto:creepybrow@gmail.com" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white">E-mail</a>
-          <a href="mailto:creepybrow@gmail.com" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white">Resume</a>
-        </div>
-      </div>
-      <div class="footer__copyright">
-        &copy; <p class="footer__copyright--para">Jay Stewart Software Engineer</p>
-      </div>
+        <div class="container">
+            <div class="row footer__row">
+                <figure>
+                    <img  id="footer__logo--img" src="./Assets/PersonalLogo.png" alt="">
+                </figure>
+                <div class="footer__social--list">
+                    <a href="" class="footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white">
+                    linkedin</a>
+                </div>
+                <div class="footer__social--list">
+                    <a href="" class="footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white">
+                   Github</a>
+                </div>
+                <div class="footer__social--list">
+                    <a href="" class="footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white">
+                   Email</a>
+                </div>
+                <div class="footer__social--list">
+                    <a href="" class="footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white">
+                   Resume</a>
+                </div>
+            </div>
+            <div class="footer__copyright">&copy; Jay Stewart 2025</div>
+            </div>
     </footer>
   </body>
 </html>
